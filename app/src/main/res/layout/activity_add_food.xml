@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_food"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.admin.newfoodorder.AddFood">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:onClick="imageButtonClicked"
+        android:id="@+id/foodImageButton"
+        />
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/itemName" />
+
+    <EditText
+        android:id="@+id/itemDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/itemDesc" />
+
+    <EditText
+        android:id="@+id/itemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/itemPrice" />
+
+    <Button
+        android:id="@+id/itemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addItemButtonClicked"
+        android:text="@string/itemButton" />
+</LinearLayout>
